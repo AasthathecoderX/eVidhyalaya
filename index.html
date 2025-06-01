@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>eVidhyalaya</title>
+    <link rel="stylesheet" href="style.css">
+    </head>
+<body>
+    <header>
+        <h1>Our Courses</h1>
+        <div class="filter-container">
+            <input type="text" id="courseFilter" placeholder="Search courses...">
+        </div>
+        <div class="sort-container">
+            <label for="courseSort">Sort By:</label>
+            <select id="courseSort">
+                <option value="none">Default</option>
+                <option value="title-asc">Title (A-Z)</option>
+                <option value="title-desc">Title (Z-A)</option>
+                <option value="duration-asc">Duration (Short to Long)</option>
+                <option value="duration-desc">Duration (Long to Short)</option>
+            </select>
+        </div>
+    </header>
+
+    <main id="courseContainer">
+        <p class="no-results" style="display: none;">No courses found matching your criteria.</p>
+    </main>
+
+    <script src="script.js"></script> </body>
+</html>
