@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
             "id": "jee101",
             "title": "JEE Main 2026: Mock Test Series",
             "instructor": "eVidhyalaya Experts",
-            "duration": "Self-Paced", // Handle this
+            "duration": "Self-Paced", 
             "imageUrl": "https://placehold.co/300x150?text=JEE+Main+2026+Mocks",
             "description": "Comprehensive mock tests based on the NTA reduced syllabus for Class 11 & 12. Includes 30 topic-wise tests."
         },
@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', () => {
             "id": "jee202",
             "title": "JEE 2026: Chapter-wise Tests (PCM)",
             "instructor": "Experienced IITian Faculty",
-            "duration": "Ongoing Access", // Handle this
+            "duration": "Ongoing Access", 
             "imageUrl": "https://placehold.co/300x150?text=JEE+Chapter+Tests",
             "description": "Over 350+ tests covering Physics, Chemistry, and Mathematics chapter-wise, full syllabus, PYQs, and more."
         },
@@ -47,10 +47,10 @@ document.addEventListener('DOMContentLoaded', () => {
     const courseSort = document.getElementById('courseSort');
     const noResultsMessage = document.querySelector('.no-results');
 
-    let displayedCourses = [...coursesData]; // Use 'coursesData' for the initial copy
+    let displayedCourses = [...coursesData]; 
 
     // Helper function to parse duration into a comparable number (e.g., total days)
-    // This is crucial for accurate numeric sorting of durations like "8 Weeks", "12 Weeks", "Self-Paced"
+    
     function parseDuration(durationStr) {
         durationStr = durationStr.toLowerCase();
         if (durationStr.includes("self-paced") || durationStr.includes("ongoing")) {
